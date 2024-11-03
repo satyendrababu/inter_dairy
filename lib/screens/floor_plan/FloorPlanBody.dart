@@ -2,7 +2,6 @@ import 'package:inter_dairy/screens/exhibitor_registration/ExhibitorRegistration
 import 'package:inter_dairy/screens/web_pdf_viewer/LocalImageViewScreen.dart';
 import 'package:inter_dairy/screens/web_pdf_viewer/PdfViewerScreen.dart';
 import 'package:inter_dairy/screens/widgets/TextTitle.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class FloorPlanBody extends StatelessWidget {
@@ -21,9 +20,9 @@ class FloorPlanBody extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: getProportionateScreenHeight(20)),
+              SizedBox(height: 20),
               const TextTitle(text: 'Floor Plan'),
-              SizedBox(height: getProportionateScreenHeight(25)),
+              SizedBox(height: 25),
               Card(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)
@@ -55,7 +54,7 @@ class FloorPlanBody extends StatelessWidget {
                 ),
 
               ),
-              SizedBox(height: getProportionateScreenHeight(10)),
+              SizedBox(height: 10),
               Card(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)
@@ -87,7 +86,7 @@ class FloorPlanBody extends StatelessWidget {
                 ),
 
               ),
-              SizedBox(height: getProportionateScreenHeight(10)),
+              SizedBox(height: 10),
               Card(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)
@@ -119,7 +118,7 @@ class FloorPlanBody extends StatelessWidget {
                 ),
 
               ),
-              SizedBox(height: getProportionateScreenHeight(10)),
+              SizedBox(height: 10),
               Card(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8)

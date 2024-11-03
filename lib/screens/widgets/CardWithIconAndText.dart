@@ -1,5 +1,4 @@
 import 'package:inter_dairy/screens/widgets/IconBg.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class CardWithIconAndText extends StatelessWidget {

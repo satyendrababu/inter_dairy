@@ -3,7 +3,6 @@ import 'package:inter_dairy/model/ExListModel.dart';
 import 'package:inter_dairy/screens/widgets/MyErrorWidget.dart';
 import 'package:inter_dairy/screens/widgets/LoadingWidget.dart';
 import 'package:inter_dairy/screens/widgets/TextTitle.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:inter_dairy/view_model/ExhibitorListVM.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -67,11 +66,11 @@ class _ExhibitorListBodyState extends State<ExhibitorListBody> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SizedBox(height: getProportionateScreenHeight(16)),
+          SizedBox(height: 16),
           const TextTitle(text: 'Exhibitor List'),
-          SizedBox(height: getProportionateScreenHeight(16)),
+          SizedBox(height: 16),
           _buildSearchBarForFilterList(),
-          SizedBox(height: getProportionateScreenHeight(16)),
+          SizedBox(height: 16),
           Expanded(
             child: ListView.builder(
                 physics: const AlwaysScrollableScrollPhysics(),

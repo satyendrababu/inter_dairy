@@ -74,8 +74,8 @@ class ProfileBottomNavBar extends StatelessWidget {
                   : BottomMenuItem(
                   iconPath: 'assets/images/exhibitor_off.png', label: 'Ex List', textColor: Colors.grey),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => ExhibitorListScreen()));
+                /*Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => ExhibitorListScreen()));*/
               },
             ),
 

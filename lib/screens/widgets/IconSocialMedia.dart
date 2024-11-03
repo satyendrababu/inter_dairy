@@ -1,5 +1,5 @@
 import 'package:inter_dairy/res/AppContextExtension.dart';
-import 'package:inter_dairy/utils/size_config.dart';
+
 import 'package:flutter/material.dart';
 
 class IconSocialMedia extends StatelessWidget {
@@ -10,11 +10,11 @@ class IconSocialMedia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: getProportionateScreenWidth(40),
+      width: 40,
       child: Container(
-        padding: EdgeInsets.all(getProportionateScreenWidth(8)),
-        height: getProportionateScreenWidth(40),
-        width: getProportionateScreenWidth(40),
+        padding: EdgeInsets.all(8),
+        height: 40,
+        width: 40,
         decoration: BoxDecoration(
           color: context.resources.color.colorWhite,
           borderRadius: BorderRadius.circular(6),

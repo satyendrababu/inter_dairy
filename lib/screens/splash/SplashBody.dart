@@ -6,13 +6,13 @@ import 'package:inter_dairy/screens/widgets/AppLogoTop.dart';
 import 'package:inter_dairy/screens/widgets/GradientButton.dart';
 import 'package:inter_dairy/screens/widgets/MyButton.dart';
 import 'package:inter_dairy/screens/widgets/MyTextView.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 
 class SplashBody extends StatelessWidget {
   const SplashBody({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return SafeArea(
       child: Stack(
         children: [
@@ -27,10 +27,10 @@ class SplashBody extends StatelessWidget {
             width: double.infinity,
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.02),
+                SizedBox(height: 50),
 
                 AppLogoTop(),
-                const Spacer(),
+                SizedBox(height: 50),
                 const Text(
                   'International exhibition for\n complete value chain of dairy\n industry',
                   textAlign: TextAlign.center,
@@ -40,7 +40,7 @@ class SplashBody extends StatelessWidget {
                       fontWeight: FontWeight.w600
                   ),
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.02),
+                SizedBox(height: 20),
                 const Text(
                   '05-06-07 December, 2024',
                   textAlign: TextAlign.center,
@@ -50,7 +50,7 @@ class SplashBody extends StatelessWidget {
                       fontWeight: FontWeight.w600
                   ),
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.02),
+                SizedBox(height: 20),
 
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -65,7 +65,7 @@ class SplashBody extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Spacer(flex: 2,),
+                SizedBox(height: 200),
                 Padding(
                   padding: const EdgeInsets.only(left: 90, top: 0, right: 90, bottom: 0),
                   child: GradientButton(
@@ -76,28 +76,8 @@ class SplashBody extends StatelessWidget {
                       }
                   ),
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.04),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    '',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Montserrat-Regular.ttf',
-                        color: Colors.grey
-                    ),
-                  ),
-                ),
-                SizedBox(height: SizeConfig.screenHeight * 0.02),
+                SizedBox(height: 20),
 
-                //AppLogoBottom(),
-                /*Container(
-                  width: SizeConfig.screenWidth,
-                  height: 100,
-                  child: Image.asset('assets/images/banner_bottom.PNG'),
-                ),*/
 
               ],
             ),

@@ -1,8 +1,6 @@
 import 'package:inter_dairy/screens/widgets/MyTextView.dart';
 import 'package:inter_dairy/screens/widgets/TextHeading.dart';
 import 'package:inter_dairy/screens/widgets/TextTitle.dart';
-import 'package:inter_dairy/screens/widgets/TextWithArrow.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 import '../venue/MapWidget.dart';
@@ -28,13 +26,13 @@ class EventDetailsBody extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(height: getProportionateScreenHeight(20)),
+                    SizedBox(height: 20),
                     const TextTitle(text: 'Exhibition Details'),
-                    SizedBox(height: getProportionateScreenHeight(20)),
+                    SizedBox(height: 20),
                     const TextHeading(heading: 'International exhibition for complete value chain of dairy industry'),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
                     const TextHeading(heading: '''Bombay Exhibition Center, Mumbai 05-06-07 December 2024 10:00 am to 6:00 pm'''),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -51,9 +49,9 @@ class EventDetailsBody extends StatelessWidget {
                         )
                       ],
                     ),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
                     const TextTitle(text: 'Exhibitor profile'),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
                     const Padding(
                       padding: EdgeInsets.only(left: 16.0),
                       child: Column(
@@ -77,9 +75,9 @@ class EventDetailsBody extends StatelessWidget {
                       ),
 
                     ),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
                     const TextTitle(text: 'Visitor profile'),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
                     const Padding(
                       padding: EdgeInsets.only(left: 16.0),
                       child: Column(
@@ -89,7 +87,7 @@ class EventDetailsBody extends StatelessWidget {
                       ),
 
                     ),
-                    SizedBox(height: getProportionateScreenHeight(25)),
+                    SizedBox(height: 25),
 
                     /*const TextHeading(heading: 'Get Direction'),
                     SizedBox(height: getProportionateScreenHeight(25)),

@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../../utils/size_config.dart';
-import '../widgets/CardWithIconAndText.dart';
-import '../widgets/TextHeading.dart';
 import '../widgets/TextTitle.dart';
 
 class OrganisingCommitteeBody extends StatelessWidget {
@@ -24,11 +20,11 @@ class OrganisingCommitteeBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: getProportionateScreenHeight(20)),
+                SizedBox(height: 20),
                 const TextTitle(text: 'Organising Committee'),
-                SizedBox(height: getProportionateScreenHeight(25)),
+                SizedBox(height: 25),
                 Container(
-                  height: getProportionateScreenHeight(555),
+                  height: 555,
                   color: Colors.white,
                   child: ListView(
                     shrinkWrap: true,
@@ -54,7 +50,7 @@ class OrganisingCommitteeBody extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: getProportionateScreenHeight(100)),
+                SizedBox(height: 100),
               ],
             ),
           ),

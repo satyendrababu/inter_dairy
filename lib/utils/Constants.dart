@@ -21,5 +21,5 @@ const kTextColor = Color(0xFF757575);
 //const kPrimaryColor = Color(0xff272974);
 const kPrimaryColor = Color(0xff6A5CD8);
 const btnStart = Color(0xFF5DBB5D);
-const btnCenter = Color(0xFF5DBB5D);
-
+const btnCenter = Color(0xFF337233);
+const btnColor = Color(0xFF0892D1);

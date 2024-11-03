@@ -1,6 +1,5 @@
 import 'package:inter_dairy/res/AppContextExtension.dart';
 import 'package:inter_dairy/screens/widgets/MyTextView.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 
@@ -15,7 +14,7 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: getProportionateScreenHeight(45),
+      height: 45,
       child: TextButton(
         onPressed: press as void Function()?,
         style: TextButton.styleFrom(

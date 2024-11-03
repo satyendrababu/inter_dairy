@@ -2,7 +2,6 @@ import 'package:inter_dairy/screens/widgets/TextHeading.dart';
 import 'package:inter_dairy/screens/widgets/TextTitle.dart';
 import 'package:inter_dairy/screens/widgets/TextWithArrow.dart';
 import 'package:inter_dairy/screens/widgets/bullet_text.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class ExhibitorProfileBody extends StatelessWidget {
@@ -25,10 +24,10 @@ class ExhibitorProfileBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: getProportionateScreenHeight(20)),
+                  SizedBox(height: 20),
                   const TextTitle(text: 'Exhibitor Profile'),
 
-                  SizedBox(height: getProportionateScreenHeight(25)),
+                  SizedBox(height: 25),
 
                   const SizedBox(width: 10,),
                   const Column(
@@ -51,7 +50,7 @@ class ExhibitorProfileBody extends StatelessWidget {
                       BulletText(text: 'Financial assistance institutions'),
                     ],
                   ),
-                  SizedBox(height: getProportionateScreenHeight(21)),
+                  SizedBox(height: 21),
                   /*const TextHeading(heading: 'Veterinary'),
                   SizedBox(height: getProportionateScreenHeight(16)),
                   const Row(

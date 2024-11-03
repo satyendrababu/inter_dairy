@@ -1,19 +1,12 @@
 import 'package:inter_dairy/res/AppContextExtension.dart';
 import 'package:inter_dairy/screens/awards/AwardScreen.dart';
-import 'package:inter_dairy/screens/conference/ConferenceScreen.dart';
 import 'package:inter_dairy/screens/contact/ContactScreen.dart';
-import 'package:inter_dairy/screens/details/DetailsScreen.dart';
 import 'package:inter_dairy/screens/event_details/EventDetailsScreen.dart';
-import 'package:inter_dairy/screens/exhibitor_list/ExhibitorListScreen.dart';
 import 'package:inter_dairy/screens/exhibitor_profile/ExhibitorProfileScreen.dart';
 import 'package:inter_dairy/screens/exhibitor_registration/ExhibitorRegistrationScreen.dart';
-import 'package:inter_dairy/screens/floor_plan/FloorPlanScreen.dart';
 import 'package:inter_dairy/screens/organising_committee/organising_committee_screen.dart';
 import 'package:inter_dairy/screens/widgets/MyTextView.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
-
-import '../web_pdf_viewer/PdfViewerScreen.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -31,9 +24,65 @@ class HomeBody extends StatelessWidget {
         ),
         SingleChildScrollView(
           child: SizedBox(
-            height: SizeConfig.screenHeight,
-            width: SizeConfig.screenWidth,
-            child: GridView.count(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: 6),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: eventDetails(context),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: organizingCommittee(context),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10), // Add some space at the top
+                  Row(
+                    children: [
+                      Expanded(
+                        child: exhibitorRegistration(context),
+                      ),
+                      const SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: visitorRegistration(context),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10), // Add some space at the top
+                  Row(
+                    children: [
+                      Expanded(
+                        child: seminar(context),
+                      ),
+                      const SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: awards(context),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10), // Add some space at the top
+                  Row(
+                    children: [
+                      Expanded(
+                        child: listOfExhibitors(context),
+                      ),
+                      const SizedBox(width: 10), // Add spacing between items
+                      Expanded(
+                        child: contact(context),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+           /* child: GridView.count(
               crossAxisCount: 2,
               crossAxisSpacing: 16,
               mainAxisSpacing: 16,
@@ -51,7 +100,7 @@ class HomeBody extends StatelessWidget {
 
                 const SizedBox(height: 20,)
               ],
-            ),
+            ),*/
           ),
         )
       ],
@@ -75,7 +124,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             SizedBox(
                 height: 50,
                 width: 50,
@@ -87,7 +136,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -113,7 +162,7 @@ class HomeBody extends StatelessWidget {
           children: [
 
 
-
+            const SizedBox(height: 24),
             SizedBox(
                 height: 50,
                 width: 50,
@@ -125,7 +174,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-
+            const SizedBox(height: 24),
           ],
         ),
       ),
@@ -153,7 +202,7 @@ class HomeBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
 
-
+            const SizedBox(height: 24),
             SizedBox(
                 height: 50,
                 width: 50,
@@ -165,7 +214,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-
+            const SizedBox(height: 24),
           ],
         ),
       ),
@@ -188,7 +237,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             Container(
                 height: 50,
                 width: 50,
@@ -200,7 +249,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -223,7 +272,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             Container(
                 height: 50,
                 width: 50,
@@ -235,7 +284,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -261,7 +310,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             Container(
                 height: 50,
                 width: 50,
@@ -273,7 +322,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -299,7 +348,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             SizedBox(
                 height: 50,
                 width: 50,
@@ -311,7 +360,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -339,7 +388,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             Container(
                 height: 50,
                 width: 50,
@@ -351,7 +400,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -370,8 +419,8 @@ class HomeBody extends StatelessWidget {
           //Navigator.pushNamed(context, ExhibitorListScreen.id);
           Navigator.push(context,
               MaterialPageRoute(builder: (context) =>
-              const PdfViewerScreen(
-                  url: 'https://interdairy.in/ID_Exhibitors_list.pdf', title: '')));
+              const ExhibitorRegistrationScreen(
+                  url: 'https://interdairy.in/Exhibitorlist')));
 
 
         },
@@ -379,7 +428,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
             Container(
                 height: 50,
                 width: 50,
@@ -387,11 +436,11 @@ class HomeBody extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             MyTextView(
-                'List of Exhibitor',
+                'List of Exhibitors',
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),
@@ -415,7 +464,7 @@ class HomeBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 24),
 
 
             Container(
@@ -429,7 +478,7 @@ class HomeBody extends StatelessWidget {
                 context.resources.color.colorBlack,
                 context.resources.dimension.smallText
             ),
-            const SizedBox(height: 16)
+            const SizedBox(height: 24)
           ],
         ),
       ),

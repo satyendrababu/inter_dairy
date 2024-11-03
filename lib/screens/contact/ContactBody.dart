@@ -4,7 +4,6 @@ import 'package:inter_dairy/screens/widgets/CardWithIconAndText.dart';
 import 'package:inter_dairy/screens/widgets/IconSocialMedia.dart';
 import 'package:inter_dairy/screens/widgets/TextHeading.dart';
 import 'package:inter_dairy/screens/widgets/TextTitle.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class ContactBody extends StatelessWidget {
@@ -26,9 +25,9 @@ class ContactBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: getProportionateScreenHeight(20)),
+                  SizedBox(height: 20),
                   const TextTitle(text: 'Contact'),
-                  SizedBox(height: getProportionateScreenHeight(16)),
+                  SizedBox(height: 16),
                   const TextHeading(heading: 'Exhibition Secretariat:'),
                   const Text(
                     'VA Exhibitions Pvt. Ltd.',
@@ -38,7 +37,7 @@ class ContactBody extends StatelessWidget {
                         fontWeight: FontWeight.w500
                     ),
                   ),
-                  SizedBox(height: getProportionateScreenHeight(16)),
+                  SizedBox(height: 16),
                   /*const CardWithIconAndText(
                       icon: 'assets/icons/home_blue.png',
                       text:
@@ -46,26 +45,26 @@ class ContactBody extends StatelessWidget {
                   const CardWithIconAndText(
                       icon: 'assets/icons/phone.png',
                       text: '+91 9985099009 \n+91 9557328059'),
-                  SizedBox(height: getProportionateScreenHeight(10)),
+                  SizedBox(height: 10),
                   const CardWithIconAndText(
                       icon: 'assets/icons/mail.png',
                       text: 'mp@vaexhibitions.com \nvj@vaexhibitions.com'),
 
-                  SizedBox(height: getProportionateScreenHeight(24)),
+                  SizedBox(height: 24),
                   const TextTitle(text: 'Conference Secretariat'),
-                  SizedBox(height: getProportionateScreenHeight(16)),
+                  SizedBox(height: 16),
                   const TextHeading(heading: 'Indian Dairy Association West Zone'),
-                  SizedBox(height: getProportionateScreenHeight(16)),
+                  SizedBox(height: 16),
 
                   const CardWithIconAndText(
                       icon: 'assets/icons/phone.png',
                       text: '+91 9820707242 \n+91 9821441218'),
-                  SizedBox(height: getProportionateScreenHeight(10)),
+                  SizedBox(height: 10),
                   const CardWithIconAndText(
                       icon: 'assets/icons/mail.png',
                       text: 'secretary@idawz.org'),
 
-                  SizedBox(height: getProportionateScreenHeight(160)),
+                  SizedBox(height: 160),
                   /*const TextHeading(heading: 'Conference Secretariat'),
                   SizedBox(height: getProportionateScreenHeight(16)),
                   const CardWithIconAndText(
@@ -81,7 +80,7 @@ class ContactBody extends StatelessWidget {
                   const CardWithIconAndText(
                       icon: 'assets/icons/phone.png',
                       text: '+91 97397 99807 \n+91 91543 63335'),*/
-                  SizedBox(height: getProportionateScreenHeight(25)),
+                  SizedBox(height: 25),
                   /*Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

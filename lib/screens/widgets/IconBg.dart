@@ -1,5 +1,4 @@
 import 'package:inter_dairy/res/AppContextExtension.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class IconBg extends StatelessWidget {
@@ -10,11 +9,11 @@ class IconBg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: getProportionateScreenWidth(45),
+      width: 45,
       child: Container(
-        padding: EdgeInsets.all(getProportionateScreenWidth(14)),
-        height: getProportionateScreenWidth(45),
-        width: getProportionateScreenWidth(45),
+        padding: EdgeInsets.all(14),
+        height: 45,
+        width: 45,
         decoration: BoxDecoration(
           color: context.resources.color.colorIconBg,
           borderRadius: BorderRadius.circular(10),

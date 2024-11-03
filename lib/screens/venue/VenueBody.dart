@@ -1,7 +1,6 @@
 import 'package:inter_dairy/screens/venue/MapWidget.dart';
 import 'package:inter_dairy/screens/widgets/CardWithIconAndText.dart';
 import 'package:inter_dairy/screens/widgets/TextTitle.dart';
-import 'package:inter_dairy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 class VenueBody extends StatelessWidget {
@@ -25,14 +24,14 @@ class VenueBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: getProportionateScreenHeight(20)),
+                  SizedBox(height: 20),
                   const TextTitle(text: 'Venue'),
-                  SizedBox(height: getProportionateScreenHeight(25)),
+                  SizedBox(height: 25),
                   const CardWithIconAndText(
                       icon: 'assets/icons/current_location.png',
                       text: 'Bombay Exhibition Center, Mumbai'
                   ),
-                  SizedBox(height: getProportionateScreenHeight(20)),
+                  SizedBox(height: 20),
                   const MapWidget(),
                   const SizedBox(height: 200,)
             

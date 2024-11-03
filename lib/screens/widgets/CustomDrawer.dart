@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:inter_dairy/screens/home/HomeScreen.dart';
 
 import '../awards/AwardScreen.dart';
+import '../organising_committee/organising_committee_screen.dart';
 import '../web_pdf_viewer/PdfViewerScreen.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -36,7 +37,7 @@ class CustomDrawer extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushAndRemoveUntil(context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                    MaterialPageRoute(builder: (context) => const HomeScreen()),
                       (Route<dynamic> route) => false);
               },
             ),
@@ -52,19 +53,19 @@ class CustomDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, EventDetailsScreen.id);
               },
             ),
-            /*const Divider(
+            const Divider(
                 thickness: 0.5,
                 height: 0.5,
                 color: Colors.white
             ),
             ListTile(
-              title: const Text('Exhibitor Profile', style: TextStyle(color: Colors.white)),
+              title: const Text('Organising Committee', style: TextStyle(color: Colors.white)),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.pushNamed(context, ExhibitorProfileScreen.id);
+                Navigator.pushNamed(context, OrganisingCommitteeScreen.id);
 
               },
-            ),*/
+            ),
             const Divider(
                 thickness: 0.5,
                 height: 0.5,
@@ -79,7 +80,6 @@ class CustomDrawer extends StatelessWidget {
                     MaterialPageRoute(builder: (context) =>
                     const ExhibitorRegistrationScreen(
                         url: 'https://interdairy.in/exhibitorenquiry')));
-
               },
             ),
             const Divider(
@@ -139,8 +139,8 @@ class CustomDrawer extends StatelessWidget {
                 //Navigator.pushNamed(context, ExhibitorProfileScreen.id);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) =>
-                    const PdfViewerScreen(
-                        url: 'https://interdairy.in/ID_Exhibitors_list.pdf', title: '')));
+                    const ExhibitorRegistrationScreen(
+                        url: 'https://interdairy.in/Exhibitorlist')));
               },
             ),
 

@@ -1,7 +1,7 @@
 import 'package:inter_dairy/res/AppContextExtension.dart';
 import 'package:inter_dairy/screens/widgets/MyTextView.dart';
 import 'package:inter_dairy/utils/Constants.dart';
-import 'package:inter_dairy/utils/size_config.dart';
+
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
@@ -11,9 +11,10 @@ class GradientButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return SizedBox(
       width: double.infinity,
-      height: getProportionateScreenHeight(55),
+      height: 55,
       child: TextButton(
         onPressed: press as void Function()?,
         style: TextButton.styleFrom(
@@ -24,7 +25,7 @@ class GradientButton extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: const LinearGradient(
-              colors: [btnStart, btnCenter, btnStart],
+              colors: [btnCenter, btnStart, btnStart],
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
             ),
