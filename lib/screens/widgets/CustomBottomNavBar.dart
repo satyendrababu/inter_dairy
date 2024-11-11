@@ -20,7 +20,7 @@ class CustomBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 70,
       padding: const EdgeInsets.symmetric(vertical: 8),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -36,6 +36,7 @@ class CustomBottomNavBar extends StatelessWidget {
         top: false,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             GestureDetector(
               child: MenuState.home == selectedMenu
