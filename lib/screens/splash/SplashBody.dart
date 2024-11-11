@@ -65,7 +65,7 @@ class SplashBody extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 200),
+                Spacer(),
                 Padding(
                   padding: const EdgeInsets.only(left: 90, top: 0, right: 90, bottom: 0),
                   child: GradientButton(
@@ -76,8 +76,7 @@ class SplashBody extends StatelessWidget {
                       }
                   ),
                 ),
-                SizedBox(height: 20),
-
+                SizedBox(height: 70),
 
               ],
             ),
