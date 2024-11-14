@@ -79,6 +79,37 @@ class HomeBody extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height: 10),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20.0),
+                        child: MyTextView(
+                            'In Association With',
+                            Colors.white,
+                            14
+                        ),
+                      ),
+                      const SizedBox(height: 16),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          SizedBox(
+                              height: 90,
+                              width: 90,
+                              child: Image.asset('assets/images/nda_new.png')
+                          ),
+                          SizedBox(
+                              height: 50,
+                              width: 200,
+                              child: Image.asset('assets/images/va.png')
+                          )
+                        ],
+                      )
+                    ],
+                  )
                 ],
               ),
             ),

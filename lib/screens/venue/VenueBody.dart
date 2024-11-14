@@ -17,23 +17,23 @@ class VenueBody extends StatelessWidget {
               fit: BoxFit.cover,
             )
         ),
-        SafeArea(
+        const SafeArea(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 20),
-                  const TextTitle(text: 'Venue'),
+                  TextTitle(text: 'Venue'),
                   SizedBox(height: 25),
-                  const CardWithIconAndText(
+                  CardWithIconAndText(
                       icon: 'assets/icons/current_location.png',
                       text: 'Bombay Exhibition Center, Mumbai'
                   ),
                   SizedBox(height: 20),
-                  const MapWidget(),
-                  const SizedBox(height: 200,)
+                  MapWidget(),
+                  SizedBox(height: 200,)
             
                 ],
               ),

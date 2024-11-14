@@ -20,15 +20,14 @@ class OrganisingCommitteeBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 const TextTitle(text: 'Organising Committee'),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Container(
-                  height: 555,
                   color: Colors.white,
                   child: ListView(
                     shrinkWrap: true,
-
+                    physics: const NeverScrollableScrollPhysics(),
                     children: [
                       buildSectionTitle('Patrons'),
                       buildMemberItem('Dr. Meenesh Shah', 'Chairman, NDDB', false),
@@ -50,7 +49,30 @@ class OrganisingCommitteeBody extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 100),
+                const SizedBox(height: 20),
+                const TextTitle(text: 'Exhibition'),
+                const SizedBox(height: 25),
+                Container(
+                  color: Colors.white,
+                  child: ListView(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    children: [
+                      buildSectionTitle('Chairman'),
+                      buildMemberItem('Mr. Amit Vyas', 'MD, Amul Dairy', false),
+
+                      buildSectionTitle('Members'),
+                      buildMemberItem('Mr. Rahul Kumar', 'COO, Parag Milk Foods', true),
+                      buildMemberItem('Mr. R K Malik', 'ED ,IDMC', false),
+                      buildMemberItem('Mr. Pravin Bhambi', 'ED, Dudhsagar Dairy', true),
+                      buildMemberItem('Mr. Vikram Chavda', 'Head – Projects. Amul Dairy', false),
+                      buildMemberItem('Mr. Abhijit Bhattacharjee', 'Head- Public Relations, NDDB', true),
+
+
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 25),
               ],
             ),
           ),

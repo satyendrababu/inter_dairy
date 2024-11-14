@@ -85,13 +85,13 @@ To celebrate innovation & entrepreneurship, the driving force in achieving such 
                   padding: EdgeInsets.only(left: 16.0),
                   child: Column(
                     children: [
-                      BulletText(text: 'Below 2 lakh litres per day'),
+                      BulletText(text: 'Quality & Safety Control'),
                       SizedBox(height: 10),
-                      BulletText(text: '2 to 5 lakh litres per day'),
+                      BulletText(text: 'Processing Technology'),
                       SizedBox(height: 10),
-                      BulletText(text: '5 to 10 lakh litres per day'),
+                      BulletText(text: 'Packaging Material & Technology'),
                       SizedBox(height: 10),
-                      BulletText(text: 'Above 10 lakh litres per day'),
+                      BulletText(text: 'Sustainability'),
                       SizedBox(height: 10),
                     ],
                   ),
