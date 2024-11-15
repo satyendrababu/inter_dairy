@@ -50,7 +50,7 @@ class OrganisingCommitteeBody extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const TextTitle(text: 'Exhibition'),
+                const TextTitle(text: 'Exhibition Committee'),
                 const SizedBox(height: 25),
                 Container(
                   color: Colors.white,

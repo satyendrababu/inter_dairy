@@ -93,19 +93,22 @@ class HomeBody extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
+                          const SizedBox(width: 16,),
                           SizedBox(
                               height: 90,
                               width: 90,
                               child: Image.asset('assets/images/nda_new.png')
                           ),
+                          const Spacer(),
                           SizedBox(
                               height: 50,
                               width: 200,
                               child: Image.asset('assets/images/va.png')
-                          )
+                          ),
+                          const SizedBox(width: 16,),
                         ],
                       )
                     ],
