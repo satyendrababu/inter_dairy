@@ -14,7 +14,7 @@ class GradientButton extends StatelessWidget {
 
     return SizedBox(
       width: double.infinity,
-      height: 55,
+      height: 60,
       child: TextButton(
         onPressed: press as void Function()?,
         style: TextButton.styleFrom(
