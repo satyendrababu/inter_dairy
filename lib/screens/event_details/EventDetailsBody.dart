@@ -19,21 +19,42 @@ class EventDetailsBody extends StatelessWidget {
               fit: BoxFit.cover,
             )
         ),
-        SafeArea(
+        const SafeArea(
             child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 20),
-                    const TextTitle(text: 'Exhibition Details'),
+                    TextTitle(text: 'Exhibition Details'),
                     SizedBox(height: 20),
-                    const TextHeading(heading: 'International exhibition for complete value chain of dairy industry'),
+                    TextHeading(heading: 'Inter Dairy'),
                     SizedBox(height: 25),
-                    const TextHeading(heading: '''Bombay Exhibition Center, Mumbai 05-06-07 December 2024 10:00 am to 6:00 pm'''),
+                    TextHeading(heading: 'International exhibition for complete value chain of dairy industry \n05-06-07 December, 2024 '),
                     SizedBox(height: 25),
-                    Row(
+                    TextHeading(heading: '''Bombay Exhibition Center, Mumbai'''),
+
+                    SizedBox(height: 20),
+                    TextTitle(text: 'Timings'),
+                    SizedBox(height: 25),
+                    Padding(
+                      padding: EdgeInsets.only(left: 16.0),
+                      child: Column(
+                        children: [
+                          BulletText(text: 'Dec 05: 10:00 am TO 6:00 pm'),
+                          SizedBox(height: 10),
+                          BulletText(text: 'Dec 06: 10:00 am TO 6:00 pm'),
+                          SizedBox(height: 10),
+                          BulletText(text: 'Dec 07: 10:00 am TO 4:00 pm'),
+                          SizedBox(height: 10),
+
+                        ],
+                      ),
+
+                    ),
+
+                    /*Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         MyTextView(
@@ -48,11 +69,11 @@ class EventDetailsBody extends StatelessWidget {
                             child: Image.asset('assets/images/va.png')
                         )
                       ],
-                    ),
+                    ),*/
                     SizedBox(height: 25),
-                    const TextTitle(text: 'Exhibitor profile'),
+                    TextTitle(text: 'Exhibitor profile'),
                     SizedBox(height: 25),
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.only(left: 16.0),
                       child: Column(
                         children: [
@@ -76,9 +97,9 @@ class EventDetailsBody extends StatelessWidget {
 
                     ),
                     SizedBox(height: 25),
-                    const TextTitle(text: 'Visitor profile'),
+                    TextTitle(text: 'Visitor profile'),
                     SizedBox(height: 25),
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.only(left: 16.0),
                       child: Column(
                         children: [
